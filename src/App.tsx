@@ -1,12 +1,17 @@
 
 
 import './App.css'
+import Navbar from './components/navbar.tsx'
 
 function App() {
 
   return (
-    <><h1>Joel T George</h1>
-     
+      <>
+
+        <Navbar/>
+        <h1 className="text-3xl font-bold underline">Joel T George</h1>
+
+
     </>
   )
 }
