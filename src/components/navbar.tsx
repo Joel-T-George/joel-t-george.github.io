@@ -1,4 +1,5 @@
 import SvgButton from './toggleButton.tsx'
+import MenuList from './menulist.tsx'
 import { useState } from 'react'
 
 var menupath ="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
@@ -6,9 +7,9 @@ var closepath = "M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 
 
 
 const ToggleFunction =(toggle:any,settoggle:any)=>{
-	
-	const toggleWindow = document.querySelector('.toggle-link')!
-	toggleWindow.classList!.toggle('top-[11%]')
+	console.log("joel")
+	//const toggleWindow = document.querySelector('.toggle-link')!
+	//toggleWindow.classList!.toggle('top-[11%]')
 	
 	if(toggle){
 		
@@ -24,40 +25,29 @@ const ToggleFunction =(toggle:any,settoggle:any)=>{
 const Navbar = () => {
 	const [toggle,settoggle] = useState(false)
     return (
-    	
-        <nav className="flex justify-between items-center bg-gray-900 w-[96%] mx-auto mt-[1%] p-3 rounded-md">
+    	<>
+        <nav className="flex  bg-gray-900 bg-opacity-60	 justify-between items-center  w-[96%] mx-auto mt-[1%] p-3 rounded-md">
         	<div>
-        		<a href="#" className="text-white text-2xl font-semibold tracking-wide">Joel T George</a>
+        		<a href="#" className="text-white md:text-3xl text-2xl  tracking-wide">Joel T George</a>
         	</div>
-        	<div className="duration-300 toggle-link md:static absolute md:min-h-fit min-h-[30vh] left-[3%]  top-[-100%] bg-gray-900 opacity-90 md:opacity-100 w-[94%] rounded-[1%] flex px-3 md:w-auto duratation-150 ease-in">
-        		<ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6 pt-2 md:pt-0">
-        			<li >
-        				<a href="#" className="text-white hover:text-blue-500 font-medium tracking-wide">Home</a>
-        			</li>
-        			<li>
-        				<a href="#" className="text-white hover:text-blue-500 font-medium tracking-wide">Projects</a>
-        			</li>
-        			<li>
-        				<a href="#" className="text-white hover:text-blue-500 font-medium tracking-wide">Read Me</a>
-        			</li>
-        			<li>		
-        				<a href="#" className="text-white hover:text-blue-500 font-medium tracking-wide">Contact</a>
-        			</li>
-        		</ul>
+        	<div className="md:block hidden">
+        		<MenuList />
         	</div>
         	<div className="flex">
-        		<button className="bg-blue-500 text-white px-5 py-2 rounded-md hover:bg-blue-800 font-semibold tracking-wide" >Resume</button> 
-        		<button className="md:hidden block" onClick={ ()=>{
-        			ToggleFunction(toggle,settoggle)
-        		}
-        		}> {toggle ? <SvgButton path={closepath}/> : <SvgButton path={menupath}/>}</button>
-        		
-        		
-
-
+        		<button className="bg-blue-500 text-white px-5 py-2 rounded-md hover:bg-blue-800 tracking-wide" >Resume</button> 
+        		<button className="md:hidden" onClick={ ()=>{ ToggleFunction(toggle,settoggle)}}> 
+        			{toggle ? <SvgButton path={closepath}/> : <SvgButton path={menupath}/>}
+        		</button> 
         	</div>
+        </nav>
+        { toggle ? 
+        <div className="h-[40vh] bg-gray-900 bg-opacity-60 mt-[2%] container w-[92%] px-2 md:hidden">
+        		<MenuList />        	
+        </div>	: ""}
+        </>
 
-        </nav>	
+        
+
     );
 };
 
