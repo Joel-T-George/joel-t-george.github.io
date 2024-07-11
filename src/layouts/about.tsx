@@ -1,7 +1,11 @@
 
 const AboutUs = () => {
     return (
-        <section className="bg-[#0F1011] h-[100vh]">
+        <section className="container bg-[#0F101//1] bg-white h-[100vh] items-center mx-auto ">
+        <h1 className="text-white text-3xl font-Poppins  ">About Me</h1>
+            <p>
+                
+            </p>
         	
         </section>
     );
