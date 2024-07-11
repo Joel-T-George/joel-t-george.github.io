@@ -19,6 +19,6 @@ export default defineConfig({
       },
     },
   },
-  assetsInclude:['**/*.ttf']
+   assetsInclude:['**/*.ttf', '**/*.pdf']
 
 })

@@ -1,4 +1,4 @@
-import JoelResume from './../assets/Joel_T_George.pdf'
+import JoelResume from '/documents/Joel_T_George.pdf'
 
 
 
