@@ -27,7 +27,7 @@ const Navbar = () => {
 	const [toggle,settoggle] = useState(false)
     return (
     	<>
-        <nav className="flex  bg-gray-900 bg-opacity-60	 justify-between items-center  w-[96%] mx-auto mt-[1%] p-3 rounded-md">
+        <nav className="flex  bg-gray-900 bg-opacity-80 justify-between items-center  w-[96%] mx-auto mt-[1%] p-3 rounded-md">
         	<div>
         		<a href="#" className="text-white md:text-3xl text-2xl  tracking-wide">Joel T George</a>
         	</div>

@@ -5,6 +5,7 @@ import './index.css'
 import Navbar from './components/navbar.tsx'
 import HeroSection from './layouts/herosection.tsx'
 import AboutUs from './layouts/about.tsx'
+import ProjectSection from './layouts/projectsection.tsx'
 function App() {
 
   return (
@@ -14,6 +15,8 @@ function App() {
       </header> 
       <HeroSection />
       <AboutUs />
+
+      <ProjectSection />
     </>
   )
 }

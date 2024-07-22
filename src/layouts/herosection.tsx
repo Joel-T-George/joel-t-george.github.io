@@ -5,7 +5,7 @@ const HeroSection = () => {
     
     return (
         <>
-        <div className="container  w-[92%] sm:h-[100vh] h-fit smx:pt-[2%] pt-[15%]">
+        <div className="container  w-[92%] h-[50rem] sm:h-[100vh]  smx:pt-[2%] pt-[15%]">
     	<div className="container grid grid-col-1  place-content-center item-center mt-[15%] md:mt-[5%] mx-auto">
             <div className=" flex items-center pr-[5%] md:flex-row flex-col bg-opacity-20  hover:border-indigo-900 md:h-[70vh] h-[80vh] md:w-[70vw] w-[70vw] rounded-md">
                 <div className="container text-center pb-[5%] md:text-left pl-[5%]">
@@ -20,7 +20,7 @@ const HeroSection = () => {
                     </div>
                 </div>
                 
-                <img src={JoelImage} className="rounded-md size-60 md:size-80"alt="Logo" />                
+                <img src={JoelImage} className="rounded-md size-30 sm:size-40 md:size-80"alt="Logo" />                
             </div>
     		
     	</div>  
