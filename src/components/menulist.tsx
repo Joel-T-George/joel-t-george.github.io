@@ -10,7 +10,10 @@ const MenuList = () => {
 				<a href="#" className="text-white hover:text-blue-500  tracking-wide">Projects</a>
 			</li>
 			<li>
-				<a href="#" className="text-white hover:text-blue-500  tracking-wide">Read Me</a>
+				<a href="#" className="text-white hover:text-blue-500  tracking-wide">Stories</a>
+			</li>
+			<li>		
+				<a href="#" className="text-white hover:text-blue-500  tracking-wide">Products</a>
 			</li>
 			<li>		
 				<a href="#" className="text-white hover:text-blue-500  tracking-wide">Contact</a>

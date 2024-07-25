@@ -9,16 +9,7 @@ const ProjectList = () => {
     		<CardTwoContent />
     		<CardTwoContent />
     		<CardTwoContent />
-    		<CardTwoContent />
-    		<CardTwoContent />
-    		<CardTwoContent />
-    		<CardTwoContent />
-    		<CardTwoContent />
-    		<CardTwoContent />
-    		<CardTwoContent />
-    		<CardTwoContent />
-    		<CardTwoContent />
-
+    		
 
         		
     	</div>
