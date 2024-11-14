@@ -3,6 +3,8 @@ import ContactForm from './../components/contactform.tsx'
 
 const ContactSection = () => {
         return (
+        
+       
         <section className="bg-[#000007] h-fit text-white">
             <div className="container p-[2rem]">
                 <h1 className="font-Poppins_bold text-4xl ">Contact Me</h1>
@@ -16,6 +18,7 @@ const ContactSection = () => {
             </div>
             
         </section>
+        
             
         
     );
